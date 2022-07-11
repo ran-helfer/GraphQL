@@ -15,6 +15,7 @@
 		807ADA61287AE6D000CCF94D /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 807ADA60287AE6D000CCF94D /* schema.json */; };
 		807ADA66287AEB7000CCF94D /* BooksList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 807ADA65287AEB7000CCF94D /* BooksList.graphql */; };
 		807ADA68287AEBA800CCF94D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807ADA67287AEBA800CCF94D /* API.swift */; };
+		80F7FEFB287C013400A628BA /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7FEFA287C013400A628BA /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		807ADA60287AE6D000CCF94D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		807ADA65287AEB7000CCF94D /* BooksList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BooksList.graphql; sourceTree = "<group>"; };
 		807ADA67287AEBA800CCF94D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		80F7FEFA287C013400A628BA /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				807ADA67287AEBA800CCF94D /* API.swift */,
 				807ADA4F287AC45400CCF94D /* GraphQLApp.swift */,
 				807ADA51287AC45400CCF94D /* ContentView.swift */,
+				80F7FEFA287C013400A628BA /* Network.swift */,
 				807ADA65287AEB7000CCF94D /* BooksList.graphql */,
 				807ADA53287AC45700CCF94D /* Assets.xcassets */,
 				807ADA55287AC45700CCF94D /* Preview Content */,
@@ -180,6 +183,7 @@
 			files = (
 				807ADA52287AC45400CCF94D /* ContentView.swift in Sources */,
 				807ADA68287AEBA800CCF94D /* API.swift in Sources */,
+				80F7FEFB287C013400A628BA /* Network.swift in Sources */,
 				807ADA50287AC45400CCF94D /* GraphQLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

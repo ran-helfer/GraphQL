@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var model = BooksModel()
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onAppear(perform: {
+                model.fetch()
+            })
     }
 }
 

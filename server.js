@@ -2,10 +2,10 @@
 // # Is this OK? (yes) yes
 // # npm i --save-dev nodemon
 // # npm run devStart
-// Then visit http://localhost:5000/graphql
-// npm install -g graphql
-// npm install -g apollo
-// apollo schema:download --endpoint=http://localhost:5000/graphql schema.json
+// # Then visit http://localhost:5555/graphql
+// # npm install -g graphql
+// # npm install -g apollo
+// # apollo schema:download --endpoint=http://localhost:5000/graphql schema.json
 
 const authorsData = [
 	{ id: 1, name: 'J. K. Rowling' },
@@ -136,5 +136,5 @@ app.use('/graphql', expressGraphQL({
   schema: schema,
   graphiql: true
 }))
-app.listen(5000, () => console.log('Server Running'))
+app.listen(5555, () => console.log('Server Running'))
 
