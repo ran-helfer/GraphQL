@@ -29,7 +29,7 @@ class BooksModel: ObservableObject {
         Network.shared.apollo.fetch(query: BooksListQuery()) { [weak self] result in
             switch result {
             case .success(let graphQLObject):
-                print(graphQLObject)
+                self?.process(data: graphQLObject.data)
             case .failure(let error):
                 print("error is \(error)")
 
@@ -37,10 +37,10 @@ class BooksModel: ObservableObject {
         }
     }
     
-    func process(data: Dictionary<String, Any>) {
-        print("i got this")
-
-       print(data)
+    func process(data: BooksListQuery.Data?) {
+        guard let data = data else { return }
+        /* Seem like we get the data from the local server ok */
+        print(data)
     }
 }
 
