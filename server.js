@@ -2,7 +2,7 @@
 // # Is this OK? (yes) yes
 // # npm i --save-dev nodemon
 // # npm run devStart
-// # Then visit http://localhost:5555/graphql
+// # Then visit http://localhost:7777/graphql
 // # npm install -g graphql
 // # npm install -g apollo
 // # apollo schema:download --endpoint=http://localhost:5000/graphql schema.json
@@ -136,5 +136,5 @@ app.use('/graphql', expressGraphQL({
   schema: schema,
   graphiql: true
 }))
-app.listen(5555, () => console.log('Server Running'))
+app.listen(7777, () => console.log('Server Running'))
 

@@ -9,14 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var model = BooksModel()
+    @ObservedObject var model = BooksModel()
     
     var body: some View {
-        Text("Hello, world!")
+        if model.bookList == nil {
+            Text("Downloading...")
             .padding()
             .onAppear(perform: {
                 model.fetch()
             })
+        } else {
+            if let books = model.bookList?.books  {
+                List {
+                    ForEach(books) { book in
+                        VStack(alignment: .leading) {
+                            Text(book.name)
+                                .fontWeight(.light)
+                            Text(book.author.name)
+                                .fontWeight(.thin)
+                                .foregroundColor(.gray)
+                            Spacer(minLength: 8)
+                        }
+                    }
+                    Button("Download Books") {
+                        model.fetch()
+                    }.foregroundColor(.blue)
+                }
+            }
+        }
+        
     }
 }
 
